@@ -1,0 +1,13 @@
+.books{
+  display: flex;
+  border: 1px solid black;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.update {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Book from '../components/Book';
-import Form from '../components/Form';
+import BooksForm from '../components/Form';
 
 const Books = () => {
  
@@ -25,7 +25,7 @@ const Books = () => {
       )}
     </div>
     <div>
-      <Form />
+      <BooksForm />
     </div>
     </>
   )
