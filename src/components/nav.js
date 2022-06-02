@@ -6,7 +6,7 @@ function Nav() {
     <div className="header-container">
         <h1>Bookstore</h1>
         <nav>
-          <Link to="/">BOOKS</Link>
+          <Link to="/">BOOKS</Link> {' '}
           <Link to="/categories">CATEGORIES</Link>
         </nav>
       </div>

@@ -3,9 +3,10 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link,
 } from 'react-router-dom';
-import Nav from './components/nav'
+import Nav from './components/nav';
+import Books from './pages/Books';
+import Categories from './pages/Categories'
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
         <Nav />
       </div>
       <Routes>
-        
+        <Route index element ={<Books/>}/>
+        <Route path="/categories" element={<Categories/>}/>
       </Routes>
     </Router>
   );
