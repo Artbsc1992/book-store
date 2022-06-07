@@ -11,16 +11,23 @@ const deleteBook = (book) => ({
   book,
 });
 
-const reducer = (state = [], action) => {
+const showBooks = [
+  {
+    title: 'Bones',
+    author: 'Roberto Bolaños',
+    id: '1',
+  },
+  {
+    title: 'El principito',
+    author: 'no se',
+    id: '2',
+  },
+];
+
+const reducer = (state = showBooks, action) => {
   switch (action.type) {
     case ADD_BOOK:
-      return [...state,
-        {
-          title: action.title,
-          author: action.author,
-          id: action.id,
-        },
-      ];
+      return [...state, action.book];
     case DELETE_BOOK:
       return state.filter((book) => book.id !== action.book.id);
     default:

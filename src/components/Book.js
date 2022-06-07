@@ -4,6 +4,7 @@ import './books.css';
 
 const Book = (props) => {
   const { title, author } = props;
+  
   return (
     <div className="books">
       <ul>

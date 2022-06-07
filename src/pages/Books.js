@@ -1,20 +1,9 @@
-import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import Book from '../components/Book';
 import BooksForm from '../components/Form';
 
 const Books = () => {
-  const [books] = useState([
-    {
-      title: 'Bones',
-      author: 'Roberto Bolaños',
-      id: '1',
-    },
-    {
-      title: 'El principito',
-      author: 'no se',
-      id: '2',
-    },
-  ]);
+  const books = useSelector((state) => state.book);
   return (
     <>
       <div>
