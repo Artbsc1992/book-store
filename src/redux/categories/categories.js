@@ -5,13 +5,13 @@ const checkStatus = () => ({
 });
 
 const reducer = (state = [], action) => {
-  switch (action.type){
+  switch (action.type) {
     case CHECK_STATUS:
-      return 'Under Construction'
+      return 'Under Construction';
     default:
-      return state
+      return state;
   }
-}
+};
 
-export default reducer
-export { checkStatus }
+export default reducer;
+export { checkStatus };
