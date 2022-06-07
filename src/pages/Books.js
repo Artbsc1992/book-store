@@ -8,7 +8,7 @@ const Books = () => {
     <>
       <div>
         {books && books.map(
-          (book) => <Book title={book.title} author={book.author} key={book.id} />,
+          (book) => <Book book={book} key={book.id} />,
         )}
       </div>
       <div>
