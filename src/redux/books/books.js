@@ -5,7 +5,6 @@ const BOOKS_LOADED = 'bookstore/books/BOOKS_LOADED';
 const loadBooks = async (dispatch) => {
   const result = await fetch('https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/JGms9szFN36yhxA4pKxo/books');
   const json = await result.json();
-  console.log(json)
   const books = Object.keys(json).map((key) => ({
     id: key,
     ...json[key][0],

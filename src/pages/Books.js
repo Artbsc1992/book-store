@@ -9,7 +9,7 @@ const Books = () => {
   const books = useSelector((state) => state.book);
   useEffect(() => {
     dispatch(loadBooks);
-  },[]);
+  }, []);
   return (
     <>
       <div>
