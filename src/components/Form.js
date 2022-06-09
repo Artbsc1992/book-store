@@ -17,6 +17,7 @@ const BooksForm = () => {
       author,
       title,
       id: new Date().getMilliseconds().toString(),
+      category: 'Action',
     };
     dispatch(addBook(newBook));
   };
