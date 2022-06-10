@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addBook } from '../redux/books/books';
+import './form.css';
 
 const BooksForm = () => {
   const dispatch = useDispatch();
@@ -29,7 +30,7 @@ const BooksForm = () => {
         {' '}
         <input type="text" name="author" placeholder="Author" onChange={updateAuthor} />
         {' '}
-        <button type="submit">ADD BOOK</button>
+        <button type="submit" className="submit">ADD BOOK</button>
       </form>
     </div>
   );
