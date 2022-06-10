@@ -18,9 +18,13 @@ const Book = (props) => {
         <h2>{title}</h2>
         <h3>{author}</h3>
         <div>
-          <button type="button">Comments</button>
-          <button type="button" onClick={removeBook}>Remove</button>
-          <button type="button">Edit</button>
+          <button type="button" className="book-button">Comments</button>
+          |
+          {' '}
+          <button type="button" className="book-button" onClick={removeBook}>Remove</button>
+          |
+          {' '}
+          <button type="button" className="book-button">Edit</button>
         </div>
       </ul>
       <div>
