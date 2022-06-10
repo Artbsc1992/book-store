@@ -1,15 +1,20 @@
+ul {
+  padding: 0;
+}
+
 .books {
   display: flex;
   border: 1px solid #e8e8e8;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 2rem 3rem 0 3rem;
   background-color: #fafafa;
+  padding: 2rem 1.688rem;;
 }
 
 .update {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 
@@ -41,4 +46,34 @@ span{
   padding: 0;
   margin-right: 0.5rem;
   color: #4386bf;
+  cursor: pointer;
+}
+
+.wheel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percentage {
+ position: relative;
+ top: -1rem;
+ width: 30px;
+ right: -30px;
+ font-size: 30px;
+ 
+}
+
+.completed {
+  position: relative;
+  top: 1rem;
+}
+
+.progress {
+  border: none;
+  background-color: #0290ff;
+  border-radius: 4px;
+  color: #fff;
+  padding: 0.5rem 1.375rem;
+  margin-top: 1rem;
 }
