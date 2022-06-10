@@ -7,6 +7,10 @@
   padding: 0 3rem 0 3rem;
 }
 
+.title {
+  color: #0290ff;
+}
+
 .nav {
   display: flex;
   gap: 2rem;
@@ -18,4 +22,13 @@
   font-size: .813rem;
   text-decoration: none;
   font-weight: 300;
+}
+
+i {
+  border: 1px solid #ebebeb;
+  border-radius: 100%;
+  padding: 1rem;
+  color: #0290ff;
+  position: absolute;
+  right: 6.25rem;
 }
