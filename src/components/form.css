@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   background-color: transparent;
-  margin: 2rem 3rem ;
+  margin: 2rem 3rem;
   border-top: 1px solid #ebebeb;
   padding: 2rem 0 0 0;
 }
@@ -24,7 +24,7 @@ form input {
   outline: none;
   border: 1px solid #ebebeb;
   width: calc(50% - 100px);
-  letter-spacing: -.15px;
+  letter-spacing: -0.15px;
   padding: 0 10px;
   border-radius: 4px;
 }
