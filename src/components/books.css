@@ -2,6 +2,10 @@ ul {
   padding: 0;
 }
 
+ul span {
+  color: hsl(0, 0%, 0%, 0.4);
+}
+
 .books {
   display: flex;
   border: 1px solid #e8e8e8;
@@ -19,7 +23,7 @@ ul {
 }
 
 .update h3 {
-  color: black
+  color: hsl(0, 0%, 0%, 0.4)
 }
 
 h2,
@@ -67,6 +71,7 @@ span{
 .completed {
   position: relative;
   top: 1rem;
+  color: hsl(0, 0%, 0%, 0.3);
 }
 
 .progress {
